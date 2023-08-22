@@ -31,13 +31,21 @@ class QuestaoViewController: UIViewController {
         if numeroQuestao < questoes.count - 1 {
             numeroQuestao += 1
             Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(configurarQuestao), userInfo: nil, repeats: false)
+        } else {
+            navegaParaTelaDesempenho()
         }
+    }
+    
+    func navegaParaTelaDesempenho() {
+        performSegue(withIdentifier: "irParaTelaDesempenho", sender: nil)
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configurarLayout()
         configurarQuestao()
+        
     }
     
     func configurarLayout() {
@@ -58,6 +66,13 @@ class QuestaoViewController: UIViewController {
             botao.setTitle(tituloBotao, for: .normal)
             botao.backgroundColor = UIColor(red: 116/255, green: 50/255, blue: 255/255, alpha: 1.0)
         }
+    }
+    
+    // segue = trasicao entre telas
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let desempenhoVC = segue.destination as? DesempenhoViewController else { return }
+        
+        desempenhoVC.pontuacao = pontuacao
     }
 
 }

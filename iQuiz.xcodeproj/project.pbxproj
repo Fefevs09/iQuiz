@@ -15,6 +15,7 @@
 		111858792A92CE350050F16B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111858772A92CE350050F16B /* LaunchScreen.storyboard */; };
 		111858812A93AE860050F16B /* QuestaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111858802A93AE860050F16B /* QuestaoViewController.swift */; };
 		111858832A93EB880050F16B /* Questao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111858822A93EB880050F16B /* Questao.swift */; };
+		11AEE3642A94EEC40018BB67 /* DesempenhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AEE3632A94EEC40018BB67 /* DesempenhoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1118587A2A92CE350050F16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		111858802A93AE860050F16B /* QuestaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestaoViewController.swift; sourceTree = "<group>"; };
 		111858822A93EB880050F16B /* Questao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questao.swift; sourceTree = "<group>"; };
+		11AEE3632A94EEC40018BB67 /* DesempenhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesempenhoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +62,34 @@
 		1118586B2A92CE340050F16B /* iQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				111858822A93EB880050F16B /* Questao.swift */,
+				11AEE3662A95288E0018BB67 /* Modelo */,
+				11AEE3652A9502AE0018BB67 /* ViewController */,
 				1118586C2A92CE340050F16B /* AppDelegate.swift */,
 				1118586E2A92CE340050F16B /* SceneDelegate.swift */,
-				111858702A92CE340050F16B /* ViewController.swift */,
 				111858722A92CE340050F16B /* Main.storyboard */,
 				111858752A92CE350050F16B /* Assets.xcassets */,
 				111858772A92CE350050F16B /* LaunchScreen.storyboard */,
 				1118587A2A92CE350050F16B /* Info.plist */,
-				111858802A93AE860050F16B /* QuestaoViewController.swift */,
 			);
 			path = iQuiz;
+			sourceTree = "<group>";
+		};
+		11AEE3652A9502AE0018BB67 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				111858702A92CE340050F16B /* ViewController.swift */,
+				111858802A93AE860050F16B /* QuestaoViewController.swift */,
+				11AEE3632A94EEC40018BB67 /* DesempenhoViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		11AEE3662A95288E0018BB67 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				111858822A93EB880050F16B /* Questao.swift */,
+			);
+			path = Modelo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +167,7 @@
 				1118586D2A92CE340050F16B /* AppDelegate.swift in Sources */,
 				1118586F2A92CE340050F16B /* SceneDelegate.swift in Sources */,
 				111858832A93EB880050F16B /* Questao.swift in Sources */,
+				11AEE3642A94EEC40018BB67 /* DesempenhoViewController.swift in Sources */,
 				111858812A93AE860050F16B /* QuestaoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
